@@ -48,7 +48,7 @@ gulp.task('watch', function () {
     gulp.watch('app/*.html', ['html']);
 });
 
-gulp.task('start_work', ['connect', 'watch']);
+gulp.task('default', ['connect', 'watch']);
 
 gulp.task('build', function () {
     return gulp.src('app/less/*.less')

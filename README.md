@@ -5,4 +5,4 @@
 2. npm i
 3. bower i
 4. gulp build
-5. gulp start_work
+5. gulp
