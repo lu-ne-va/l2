@@ -1,5 +1,294 @@
-body {
-    background: url("../img/comppattern2.png");
-    font-family: 'fira_sanslight', sans-serif;
-    font-size: 15px;
+.b-header {
+    position: relative;
+    background-color: #eff3f7;
+    padding: 35px 0 30px 0;
+
+    &__container {
+        width: 1200px;
+        margin: auto;
+    }
+
+    &__logo {
+        width: 244px;
+        height: 42px;
+        margin: 4px 0;
+        display: inline-block;
+        float: left;
+        background: url("../img/logo-hor.png") no-repeat;
+
+
+    }
+
+    &__social-icons {
+        float: right;
+    }
+
+
+    &:after {
+        position: absolute;
+        bottom: 0;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #1c667a;
+        background-image: linear-gradient(to right, rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
+
+    }
+}
+
+.b-social {
+    width: 100%;
+
+    &__icon {
+        display: inline-block;
+        margin-left: 17px;
+        width: 49px;
+        height: 49px;
+        background: url("../img/icons/header_icons.png") ;
+
+
+        &_vk {
+            background-position: 0 0;
+            transition: all .3s;
+
+            &:hover {
+                background-position: 0 -95px;
+            }
+        }
+
+        &_twitter {
+            background-position: 189px 0;
+            transition: all .3s;
+
+            &:hover {
+                background-position: 189px -95px;
+            }
+        }
+
+        &_facebook {
+            background-position: 119px 0;
+            transition: all .3s;
+
+            &:hover {
+                background-position: 119px -95px;
+            }
+        }
+
+        &_github {
+            background-position: 49px 0;
+            transition: all .3s;
+
+            &:hover {
+                background-position: 49px -95px;
+            }
+        }
+    }
+}
+
+.b-content {
+    width: 1200px;
+    margin: 39px auto;
+
+    &__left-column {
+        width: 250px;
+        margin: 0 50px 0 120px;
+        box-sizing: border-box;
+        float: left;
+
+    }
+    &__right-column {
+        width: 650px;
+        margin: 0 120px 0 10px;
+        float: left;
+    }
+}
+
+.b-menu {
+    font-family: 'fira_sansbook', sans-serif;
+    font-size: 21px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #eff3f7;
+
+    &__item {
+        margin: auto;
+        display: block;
+        color: #959aa8;
+        border-bottom: 2px solid #3ba8c0;
+        background-color: #eff3f7;
+        padding: 21px 28px 17px;
+        transition: all .3s;
+
+        &:hover {
+           color: #3ba8c0;
+
+        }
+
+        &_active {
+            color: #FFFFFF;
+            background-color: #3ba8c0;
+
+            &:hover {
+                color: #FFFFFF;
+
+            }
+        }
+
+        &:last-child {
+            border: none;
+        }
+
+    }
+
+}
+
+.b-contacts {
+    font-family: 'fira_sansbook', sans-serif;
+    font-size: 17px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 26px;
+
+    &__item {
+        display: block;
+        color: #FFFFFF;
+        padding: 6px 0 7px 84px ;
+        position: relative;
+
+        &:hover {
+            text-decoration: underline;
+
+        }
+
+        &_header {
+            background-color: #3ba8c0;
+            font-size: 21px;
+            padding: 5px 0 0 20px ;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        &_mail {
+            background-color: #41b9d4;
+            font-size: 17px;
+        }
+        &_phone {
+            background-color: #48cbe8;
+            font-size: 17px;
+        }
+        &_skype {
+            background-color: #51daf8;
+            font-size: 17px;
+        }
+
+
+    }
+    &__icon {
+        width: 21px;
+        height: 21px;
+        background: url("../img/icons/contacts_icon.png") no-repeat;
+        font-size: 17px;
+        z-index: 2;
+        position: absolute;
+        top: 11px;
+        left: 42px;
+
+        &_mail {
+            background-position: 0 0;
+        }
+
+        &_phone {
+            background-position: 0 -36px;
+        }
+
+        &_skype {
+            background-position: 0 -75px;
+        }
+    }
+}
+
+.b-content-box {
+    width: 100%;
+    background-color: #eff3f7;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 25px;
+
+    &__header {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    &__content {
+        margin: 13px 0;
+    }
+}
+
+.b-about {
+    &__img {
+        float: left;
+        border: 3px solid #3ba8c0;
+        border-radius: 50%;
+        margin-top: 31px;
+        margin-left: 55px;
+        width: 145px;
+        height: 145px;
+        overflow: hidden;
+        background: url("../img/me.jpg");
+        background-size: cover;
+
+    }
+    &__info {
+        float: left;
+        margin-left: 23px;
+        overflow: hidden;
+    }
+}
+
+.b-footer {
+    position: relative;
+    background-color: #eff3f7;
+    padding: 19px 0;
+
+    &:before {
+        position: absolute;
+        top: 0;
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #1c667a;
+        background-image: linear-gradient(to right, rgba(242,246,250,.95), rgba(28,102,122,.95) 48%, rgba(242,246,250,.95));
+
+    }
+
+    &__container {
+        width: 1200px;
+        margin: auto;
+    }
+
+    &__icon {
+        width: 20px;
+        height: 32px;
+        margin-top: 8px;
+        margin-left: 152px;
+        display: inline-block;
+        float: left;
+        background: url("../img/icons/log.png") no-repeat;
+
+        &_loged-in {
+            background: url("../img/icons/loged-in.png") no-repeat;
+        }
+
+
+
+
+    }
+
+    &__copyright {
+        font-size: 13px;
+        margin-left: 233px;
+        float: left;
+    }
 }
