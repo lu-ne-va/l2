@@ -1,7 +1,7 @@
 .b-header {
     position: relative;
     background-color: #eff3f7;
-    padding: 35px 0 30px 0;
+    padding: 25px 0 23px 0;
 
     &__container {
         width: 1200px;
@@ -10,7 +10,7 @@
 
     &__logo {
         width: 244px;
-        height: 42px;
+        height: 63px;
         margin: 4px 0;
         display: inline-block;
         float: left;
@@ -43,6 +43,7 @@
     &__icon {
         display: inline-block;
         margin-left: 17px;
+        margin-top: 10px;
         width: 49px;
         height: 49px;
         background: url("../img/icons/header_icons.png") ;
@@ -111,6 +112,15 @@
     overflow: hidden;
     background-color: #eff3f7;
 
+    &__link {
+        color: #959aa8;
+        &:hover {
+            color: #3ba8c0;
+
+        }
+
+    }
+
     &__item {
         margin: auto;
         display: block;
@@ -120,18 +130,15 @@
         padding: 21px 28px 17px;
         transition: all .3s;
 
-        &:hover {
-           color: #3ba8c0;
-
-        }
-
         &_active {
-            color: #FFFFFF;
             background-color: #3ba8c0;
 
-            &:hover {
+            & .b-menu__link {
                 color: #FFFFFF;
+                &:hover {
+                    color: #FFFFFF;
 
+                }
             }
         }
 
@@ -235,10 +242,22 @@
         width: 145px;
         height: 145px;
         overflow: hidden;
-        background: url("../img/me.jpg");
+        //        background: url("../img/me.jpg");
         background-size: cover;
+        position: relative;
 
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(59, 168, 192, 0.10);
+        }
     }
+
     &__info {
         float: left;
         margin-left: 23px;
