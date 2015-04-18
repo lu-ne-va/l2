@@ -71,11 +71,56 @@
     }
 }
 
-.work-experience {
-    -webkit-margin-start: 28px;
-    margin-top: 5px;
+.icon-list {
+
+    &__item {
+        list-style: none;
+        padding-left: 69px;
+        padding-top: 5px;
+        position: relative;
+        margin-bottom: 14px;
+
+        &_work {
+            &:before {
+                content: "";
+                display: inline-block;
+                width: 41px;
+                height: 34px;
+                background: url("../img/icons/about_icons.png") 0 0 no-repeat;
+                position: absolute;
+                left: 0;
+                top: 10px;
+            }
+        }
+        &_study {
+            &:before {
+                content: "";
+                display: inline-block;
+                width: 41px;
+                height: 34px;
+                background: url("../img/icons/about_icons.png") 0 -65px no-repeat;
+                position: absolute;
+                left: 0;
+                top: 14px;
+            }
+        }
+        &_diplom {
+            &:before {
+                content: "";
+                display: inline-block;
+                width: 41px;
+                height: 34px;
+                background: url("../img/icons/about_icons.png") 0 -122px no-repeat;
+                position: absolute;
+                left: 0;
+                top: 10px;
+            }
+        }
+
+
+    }
     & p {
-        margin-top: 3px;
+        line-height: 16px;
     }
 }
 
