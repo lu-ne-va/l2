@@ -1,7 +1,9 @@
-.b-header {
+//Шапка-начало
+.header {
     position: relative;
     background-color: #eff3f7;
     padding: 25px 0 23px 0;
+    margin-bottom: 40px;
 
     &__container {
         width: 1200px;
@@ -37,7 +39,7 @@
     }
 }
 
-.b-social {
+.social {
     width: 100%;
 
     &__icon {
@@ -87,75 +89,88 @@
     }
 }
 
-.b-content {
-    width: 1200px;
-    margin: 39px auto;
+.content {
+    width: 960px;
+    margin: 0 auto;
+    height: auto;
+    margin-bottom: 15px;
 
     &__left-column {
         width: 250px;
-        margin: 0 50px 0 120px;
+        margin-right: 60px;
         box-sizing: border-box;
         float: left;
 
     }
     &__right-column {
         width: 650px;
-        margin: 0 120px 0 10px;
         float: left;
     }
 }
 
-.b-menu {
+.menu {
     font-family: 'fira_sansbook', sans-serif;
     font-size: 21px;
     border-radius: 3px;
     overflow: hidden;
     background-color: #eff3f7;
+    margin-bottom: 25px;
 
-    &__link {
-        color: #959aa8;
-        &:hover {
-            color: #3ba8c0;
-
-        }
-
-    }
 
     &__item {
         margin: auto;
         display: block;
         color: #959aa8;
-        border-bottom: 2px solid #3ba8c0;
         background-color: #eff3f7;
-        padding: 21px 28px 17px;
+        padding: 0 10px 0;
         transition: all .3s;
 
+        & .menu__link {
+            color: #959aa8;
+            border-bottom: 2px solid #3ba8c0;
+            display: block;
+            width: 100%;
+            padding: 20px 19px 19px;
+            box-sizing: border-box;
+
+
+            &:hover {
+                color: #3ba8c0;
+
+            }
+
+
+            &_last {
+                border: none;
+            }
+
+
+        }
         &_active {
             background-color: #3ba8c0;
+            margin-top: -2px;
 
-            & .b-menu__link {
+            & .menu__link {
                 color: #FFFFFF;
+
                 &:hover {
                     color: #FFFFFF;
 
                 }
             }
-        }
 
-        &:last-child {
-            border: none;
+
         }
 
     }
 
 }
 
-.b-contacts {
+.contacts {
     font-family: 'fira_sansbook', sans-serif;
     font-size: 17px;
     border-radius: 3px;
     overflow: hidden;
-    margin-top: 26px;
 
     &__item {
         display: block;
@@ -165,6 +180,7 @@
 
         &:hover {
             text-decoration: underline;
+            color: #FFFFFF;
 
         }
 
@@ -216,7 +232,7 @@
     }
 }
 
-.b-content-box {
+.content-box {
     width: 100%;
     background-color: #eff3f7;
     border-radius: 4px;
@@ -228,47 +244,16 @@
         box-sizing: border-box;
     }
     &__content {
-        margin: 13px 0;
+        margin: 16px 0 36px 55px;
     }
 }
 
-.b-about {
-    &__img {
-        float: left;
-        border: 3px solid #3ba8c0;
-        border-radius: 50%;
-        margin-top: 31px;
-        margin-left: 55px;
-        width: 145px;
-        height: 145px;
-        overflow: hidden;
-        //        background: url("../img/me.jpg");
-        background-size: cover;
-        position: relative;
 
-        &:after {
-            content: '';
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(59, 168, 192, 0.10);
-        }
-    }
 
-    &__info {
-        float: left;
-        margin-left: 23px;
-        overflow: hidden;
-    }
-}
-
-.b-footer {
+.footer {
     position: relative;
     background-color: #eff3f7;
-    padding: 19px 0;
+    padding: 25px 0;
 
     &:before {
         position: absolute;
@@ -290,24 +275,39 @@
     &__icon {
         width: 20px;
         height: 32px;
-        margin-top: 8px;
+//        margin-top: 8px;
         margin-left: 152px;
         display: inline-block;
         float: left;
         background: url("../img/icons/log.png") no-repeat;
+        transition: all .3s;
 
+        &:hover {
+            background: url("../img/icons/loged-in.png") no-repeat;
+        }
         &_loged-in {
             background: url("../img/icons/loged-in.png") no-repeat;
         }
-
-
-
-
     }
-
     &__copyright {
         font-size: 13px;
         margin-left: 233px;
         float: left;
+        margin-top: 6px;
     }
 }
+
+.clearfix {
+    zoom: 1;
+
+    &:before {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+}
+

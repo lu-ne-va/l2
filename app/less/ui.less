@@ -1,9 +1,30 @@
+* {
+    margin: 0;
+}
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    height: auto;
+//    margin-bottom: -84px;
+
+    &:after {
+        content: "";
+        display: block;
+    }
+
+}
+
+html {
+    height: 100%;
+}
+
 body {
     background: url("../img/comppattern2.png");
     font-family: 'fira_sanslight', sans-serif;
     font-size: 15px;
     color: #4a545d;
     -webkit-font-smoothing: antialiased;
+    height: 100%;
 }
 
 a {
@@ -22,7 +43,7 @@ h1 {
     font-size: 27px;
     color: #3ba8c0;
     padding: 12px 22px;
-    border-bottom: 3px solid #3ba8c0;
+    border-bottom: 2px solid #3ba8c0;
     box-sizing: border-box;
     display: inline-block;
     margin: 0;
