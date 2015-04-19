@@ -45,8 +45,8 @@
             <nav>
                 <ul class="menu">
                     <li class="menu__item"><a class="menu__link" href="/index.html">Обо мне</a></li>
-                    <li class="menu__item menu__item_active"><a class="menu__link" href="/portfolio.html">Мои работы</a></li>
-                    <li class="menu__item"><a class="menu__link menu__link_last" href="/contact.html">Связаться со мной</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/portfolio.html">Мои работы</a></li>
+                    <li class="menu__item menu__item_active"><a class="menu__link" href="/contact.html">Связаться со мной</a></li>
                 </ul>
             </nav>
             <div class="contacts">
@@ -58,13 +58,27 @@
         </div>
         <div class="content__right-column">
             <div class="content-box">
-                <div class="content-box__header">
-                    <h1>Основная информация</h1>
+                <div class="content-box__header contact">
+                    <h1 class="contact__head">У вас интересный проект? Напишите мне</h1>
                 </div>
-                <div class="content-box__content">
-                    <div class="about clearfix">
-
-                    </div>
+                <div class="content-box__content content-box__content_contact">
+                    <form class="form clearfix">
+                        <div class="form__group form__group_sm">
+                            <label class="form__label" for="name">Имя</label>
+                            <input type="text" class="form__input" id="name" placeholder="Как к Вам обращаться">
+                        </div>
+                        <div class="form__group form__group_sm">
+                            <label class="form__label" for="mail">Email</label>
+                            <input type="text" class="form__input" id="mail" placeholder="Куда мне писать">
+                        </div>
+                        <div class="form__group form__group_lg">
+                            <label class="form__label" for="massage">Сообщение</label>
+                            <textarea class="form__input form__input_textarea" id="massage" placeholder="Кратко в чем суть"></textarea>
+                        </div>
+                        <div class="g-recaptcha" data-sitekey="6LclkAUTAAAAAN2lFlQpPpdMWtnnmVg5iEI76Vym"></div>
+                        <button type="submit" class="form__btn_blue">Отправить</button>
+                        <button type="submit" class="form__btn_grey">Очистить</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -81,5 +95,6 @@
 
     <script src="bower/jquery/dist/jquery.min.js"></script>
     <script src="js/main.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 </html>
