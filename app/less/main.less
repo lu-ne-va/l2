@@ -1,4 +1,3 @@
-//Шапка-начало
 .header {
     position: relative;
     background-color: #eff3f7;
@@ -105,6 +104,34 @@
     &__right-column {
         width: 650px;
         float: left;
+    }
+    &-box {
+        width: 100%;
+        background-color: #eff3f7;
+        border-radius: 4px;
+        margin-bottom: 25px;
+
+        &__header {
+            width: 100%;
+            box-sizing: border-box;
+            overflow: hidden;
+            border-radius: 4px 4px 0 0;
+
+        }
+        &__content {
+            padding: 16px 0 35px 55px;
+            border-radius: 0 0 4px 4px;
+
+            &_sm-bottom {
+                padding-bottom: 28px;
+            }
+            &_sm-padding {
+                padding: 0 20px 45px;
+            }
+            &_contact {
+                padding: 31px 123px;
+            }
+        }
     }
 }
 
@@ -227,33 +254,6 @@
         }
     }
 }
-
-.content-box {
-    width: 100%;
-    background-color: #eff3f7;
-    border-radius: 4px;
-    overflow: hidden;
-    margin-bottom: 25px;
-
-    &__header {
-        width: 100%;
-        box-sizing: border-box;
-    }
-    &__content {
-        padding: 16px 0 35px 55px;
-        &_sm-bottom {
-            padding-bottom: 28px;
-        }
-        &_sm-padding {
-            padding: 0 20px 45px;
-        }
-        &_contact {
-            padding: 30px 123px;
-        }
-    }
-}
-
-
 
 .footer {
     position: relative;

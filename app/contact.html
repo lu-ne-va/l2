@@ -66,18 +66,21 @@
                         <div class="form__group form__group_sm">
                             <label class="form__label" for="name">Имя</label>
                             <input type="text" class="form__input" id="name" placeholder="Как к Вам обращаться">
+                            <div class="tooltip tooltip_left hidden">Вы не ввели имя</div>
                         </div>
                         <div class="form__group form__group_sm">
                             <label class="form__label" for="mail">Email</label>
-                            <input type="text" class="form__input" id="mail" placeholder="Куда мне писать">
+                            <input type="email" class="form__input" id="mail" placeholder="Куда мне писать">
+                            <div class="tooltip tooltip_right hidden">Вы не ввели email</div>
                         </div>
                         <div class="form__group form__group_lg">
                             <label class="form__label" for="massage">Сообщение</label>
                             <textarea class="form__input form__input_textarea" id="massage" placeholder="Кратко в чем суть"></textarea>
+                            <div class="tooltip tooltip_left hidden">Ваш вопрос</div>
                         </div>
                         <div class="g-recaptcha" data-sitekey="6LclkAUTAAAAAN2lFlQpPpdMWtnnmVg5iEI76Vym"></div>
                         <button type="submit" class="form__btn_blue">Отправить</button>
-                        <button type="submit" class="form__btn_grey">Очистить</button>
+                        <button type="reset" class="form__btn_grey">Очистить</button>
                     </form>
                 </div>
             </div>

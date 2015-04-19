@@ -122,17 +122,37 @@ button {
     color: #FFFFFF;
     font-size: 19px;
     font-family: fira_sansbook, sans-serif;
-    border: none;
+    border-style: solid;
+    border-top-width: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: 2px;
     margin: 5px 1px;
     width: 140px;
+    transition: all .3s;
+    vertical-align: top;
+
+    &:hover {
+        border-bottom-width: 0;
+        margin-top: 7px;
+    }
+    &:active {
+        border-top-width: 2px;
+        margin-top: 7px;
+        border-bottom-width: 0;
+    }
 }
 :-moz-placeholder {color: #48cbe8;}
 :-ms-input-placeholder {color: #48cbe8;}
 ::-moz-placeholder {color: #48cbe8;}
 ::-webkit-input-placeholder {color: #48cbe8;}
 
-input, textarea {
+input, textarea, button {
     outline: none;
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 
