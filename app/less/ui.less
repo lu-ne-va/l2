@@ -6,12 +6,13 @@
 .wrapper {
     position: relative;
     min-height: 100%;
-    height: auto;
-//    margin-bottom: -84px;
+    height: auto!important;
+    overflow: hidden;
 
     &:after {
         content: "";
         display: block;
+        height: 80px;
     }
 
 }
@@ -41,38 +42,30 @@ a {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'fira_sansbook', sans-serif;
 }
-h1 {
-    font-size: 27px;
-    color: #3ba8c0;
-    padding: 12px 22px;
-    border-bottom: 2px solid #3ba8c0;
-    box-sizing: border-box;
-    display: inline-block;
-    margin: 0;
-    font-weight: 100;
+
+.head {
+    &_l {
+        font-size: 27px;
+        color: #3ba8c0;
+        padding: 12px 22px;
+        border-bottom: 2px solid #3ba8c0;
+        box-sizing: border-box;
+        display: inline-block;
+        margin: 0;
+        font-weight: 100;
+    }
+    &_m {
+        font-size: 25px;
+        box-sizing: border-box;
+        font-weight: 100;
+    }
+    &_sm {
+        font-size: 17px;
+        box-sizing: border-box;
+        font-weight: 100;
+    }
 }
 
-h2 {
-    font-size: 25px;
-    box-sizing: border-box;
-    font-weight: 100;
-}
-
-h3 {
-    font-size: 23px;
-}
-
-h4 {
-    font-size: 21px;
-}
-
-h5 {
-    font-size: 19px;
-}
-
-h6 {
-    font-size: 17px;
-}
 
 p {
     font-family: 'fira_sanslight', sans-serif;
@@ -110,12 +103,25 @@ dd{
 ul {
     padding: 0;
     margin: 0;
+    list-style: none;
+}
+li {
+    list-style: none;
+    display: inline-block;
 }
 
+.clearfix {
+    zoom: 1;
 
-
-.clear {
-    clear: both;
+    &:before {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+        content: "";
+        display: table;
+    }
 }
 
 .btn {
@@ -129,7 +135,6 @@ ul {
     border-left: 0;
     border-right: 0;
     border-bottom-width: 2px;
-//    margin: 5px 1px;
     width: 140px;
     transition: all .3s;
     vertical-align: top;
@@ -151,7 +156,7 @@ ul {
         display: inherit;
     }
     &-box {
-        padding-top: 9px;
+        padding-top: 15px;
     }
 
     &:hover {
@@ -229,6 +234,9 @@ ul {
         padding: 8px 9px;
         font-size: 13px;
         transition: all .3s;
+        font-family: fira_sanslight, sans-serif;
+        line-height: 30px;
+        color: #48cbe8;
 
         &_lg {
             font-size: 17px;

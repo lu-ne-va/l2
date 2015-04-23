@@ -15,10 +15,12 @@
         border-radius: 4px 4px 0 0;
         background-color: #48cbe8;
         box-sizing: border-box;
+        position: relative;
+
         &_login {
-            border-bottom: 13px solid #67dffa;
-            padding: 13px 12px 3px;
+            border-bottom: 14px solid #67dffa;
         }
+
     }
     &__close {
         background: url(../img/icons/modal_close_icon.png) no-repeat;
@@ -35,11 +37,17 @@
     width: 100%;
 
     &__input {
+        box-sizing: border-box;
+        height: 41px;
+        border: 1px solid #48cbe8;
+        padding: 8px 9px;
+        font-size: 13px;
         width: 84%;
         border-right: none;
         border-radius: 4px 0 0 4px;
         display: block;
         float: left;
+        transition: all .3s;
     }
     &__icon {
         background: url(../img/icons/load.png) center no-repeat #48cbe8;

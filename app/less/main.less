@@ -5,10 +5,10 @@
     margin-bottom: 40px;
 
     &__container {
-        width: 1200px;
+        max-width: 1200px;
+        min-width: 960px;
         margin: auto;
     }
-
     &__logo {
         width: 244px;
         height: 63px;
@@ -17,14 +17,14 @@
         float: left;
         background: url("../img/logo-hor.png") no-repeat;
 
-
+        &-text {
+            position: relative;
+            top: -100px;
+        }
     }
-
     &__social-icons {
         float: right;
     }
-
-
     &:after {
         position: absolute;
         bottom: 0;
@@ -84,6 +84,10 @@
             &:hover {
                 background-position: 49px -95px;
             }
+        }
+        &-text {
+            position: relative;
+            top: -100px;
         }
     }
 }
@@ -263,6 +267,7 @@
     position: relative;
     background-color: #eff3f7;
     padding: 25px 0;
+    margin-top: -80px;
 
     &:before {
         position: absolute;
@@ -305,17 +310,4 @@
     }
 }
 
-.clearfix {
-    zoom: 1;
-
-    &:before {
-        content: "";
-        display: table;
-    }
-    &:after {
-        clear: both;
-        content: "";
-        display: table;
-    }
-}
 
