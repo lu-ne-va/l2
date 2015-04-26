@@ -72,20 +72,20 @@
                         <h2 class="contact__head">У вас интересный проект? Напишите мне</h2>
                     </div>
                     <div class="content-box__content content-box__content_contact">
-                        <form class="form clearfix">
+                        <form class="form clearfix" id="massage-form">
                             <div class="form__group form__group_sm">
                                 <label class="form__label" for="name">Имя</label>
-                                <input type="text" class="form__input" id="name" placeholder="Как к Вам обращаться">
+                                <input type="text" name="name" class="form__input" id="name" placeholder="Как к Вам обращаться">
                                 <div class="tooltip tooltip_left-8">Вы не ввели имя</div>
                             </div>
                             <div class="form__group form__group_sm">
                                 <label class="form__label" for="mail">Email</label>
-                                <input type="email" class="form__input" id="mail" placeholder="Куда мне писать">
+                                <input type="email" name="email" class="form__input" id="mail" placeholder="Куда мне писать">
                                 <div class="tooltip tooltip_right">Вы не ввели email</div>
                             </div>
                             <div class="form__group form__group_lg">
                                 <label class="form__label" for="massage">Сообщение</label>
-                                <textarea class="form__input form__input_textarea" id="massage" placeholder="Кратко в чем суть"></textarea>
+                                <textarea  name="message" class="form__input form__input_textarea" id="massage" placeholder="Кратко в чем суть"></textarea>
                                 <div class="tooltip tooltip_left-8">Ваш вопрос</div>
                             </div>
                             <div class="g-recaptcha" data-sitekey="6LclkAUTAAAAAN2lFlQpPpdMWtnnmVg5iEI76Vym"></div>
@@ -108,6 +108,6 @@
 
 <script src="bower/jquery/dist/jquery.min.js"></script>
 <script src="js/main.js"></script>
-<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback'></script>
 </body>
 </html>

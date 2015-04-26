@@ -80,16 +80,43 @@ $(function () {
         }
     };
 
-    var $form = $('.form');
+    var $formLogin = $('#login-form');
 
-    $form.on('submit', function (e) {
+    $formLogin.on('submit', function (e) {
+        e.preventDefault();
+        if(validate.checkData($(this))) {
+        }
+    });
+    var $formAddProject = $('#add-project-form');
+
+    $formAddProject.on('submit', function (e) {
         e.preventDefault();
         if(validate.checkData($(this))) {
             addProjectPopup.hide();
             successPopup.show();
         }
     });
-    $form.on('reset', function () {
+
+    var $formSend = $('#massage-form');
+
+    $formSend.on('submit', function (e) {
+        e.preventDefault();
+        if(validate.checkData($(this))) {
+            var form_data = $(this).serialize(); //собераем все данные из формы
+            $.ajax({
+                type: "POST", //Метод отправки
+                url: "php/send.php", //путь до php фаила отправителя
+                data: form_data,
+                success: function() {
+                    //код в этом блоке выполняется при успешной отправке сообщения
+                    alert("Ваше сообщение отпрвлено!");
+                    location.href="index.html"; // переадресовываем на главную
+                }
+            })
+        }
+    });
+
+    $formSend.on('reset', function () {
         validate.clearAll($(this))
     });
 
