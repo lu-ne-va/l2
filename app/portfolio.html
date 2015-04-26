@@ -139,7 +139,8 @@
     </div>
 </div>
 
-<div class="pop-up hidden">
+<div class="pop-up pop-up_add">
+    <div class="pop-up__overlay"></div>
     <div class="window-pop">
         <div class="window-pop__head">
             <h2 class="head_m">Добавление проекта</h2>
@@ -149,38 +150,51 @@
             <form class="form form-top5 clearfix">
                 <div class="form__group form__group_pop">
                     <label class="form__label form__label_sm" for="project-name">Название проекта</label>
-                    <input type="text" class="form__input error" id="project-name" placeholder="Введите название">
+                    <input type="text" class="form__input" id="project-name" placeholder="Введите название">
 
                     <div class="tooltip tooltip_left13">Введите название</div>
                 </div>
                 <div class="form__group form__group_pop">
                     <label class="form__label form__label_sm" for="project-img">Картинка проекта</label>
-
                     <div class="input-group">
-                        <input type="email" class="input-group__input" id="project-img"
+                        <input type="text" class="form__input form__input_with-icon" id="project-img"
                                placeholder="Загрузите изображение">
-
-                        <div class="input-group__icon"></div>
+                        <div class="form__input-icon form__input-icon_load"></div>
                     </div>
-                    <div class="tooltip tooltip_left13 hidden">Изображение</div>
+                    <div class="tooltip tooltip_left13">Изображение</div>
                 </div>
                 <div class="form__group form__group_pop">
                     <label class="form__label form__label_sm" for="project-url">URL проекта</label>
-                    <input class="form__input form__input" id="project-url" placeholder="Добавьте ссылку">
+                    <input type="url" class="form__input" id="project-url" placeholder="Добавьте ссылку">
 
-                    <div class="tooltip tooltip_left13 hidden">Ссылка на проект</div>
+                    <div class="tooltip tooltip_left13">Ссылка на проект</div>
                 </div>
                 <div class="form__group form__group_pop">
                     <label class="form__label form__label_sm" for="project-about">Описание</label>
                     <textarea class="form__input form__input_textarea_sm" id="project-about"
                               placeholder="Пара слов о Вашем проекте"></textarea>
 
-                    <div class="tooltip tooltip_left13 hidden">Описание проекта</div>
+                    <div class="tooltip tooltip_left13">Описание проекта</div>
                 </div>
                 <div class="form__btn btn-box">
                     <button type="submit" class="btn form__btn btn_blue btn_center">Добавить</button>
                 </div>
             </form>
+        </div>
+    </div>
+</div>
+
+<div class="pop-up pop-up_gallery">
+    <div class="pop-up__overlay"></div>
+    <div class="window-pop">
+        <div class="window-pop__head">
+            <h2 class="head_m">Просмотр проекта</h2>
+            <div class="window-pop__close"></div>
+        </div>
+        <div class="content-box__content content-box__content_padding-none ">
+            <div class="gallery">
+
+            </div>
         </div>
     </div>
 </div>
