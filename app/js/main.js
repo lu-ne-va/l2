@@ -9,11 +9,11 @@ var Popup = function (selector) {
         },
 
         show: function () {
-            this.$el.css({'display': 'block'});
+            this.$el.fadeIn();
         },
 
         hide: function () {
-            this.$el.css({'display': 'none'});
+            this.$el.fadeOut();
         }
     };
 
@@ -92,6 +92,8 @@ var validate = {
         $input.removeClass('error');
     }
 };
+
+//todo luneva upload file
 
 $(function () {
 
