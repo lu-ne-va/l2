@@ -10,6 +10,7 @@
         background-color: transparent;
     }
     &__overlay {
+        background-color: #58697A;
         background-color: rgba(88, 105, 122, 0.76);
         position: fixed;
         top: 0;
@@ -57,7 +58,16 @@
         right: 12px;
         cursor: pointer;
     }
+
 }
+
+.no-csstransforms {
+    .window-pop {
+        top: 15%;
+        left: 15%;
+    }
+}
+
 .success {
     padding: 20px;
     width: 320px;
@@ -92,5 +102,13 @@
 
     &__img {
         max-height: 70vh;
+    }
+}
+
+.no-cssvhunit {
+    .gallery {
+        &__img {
+            max-height: 400px;
+        }
     }
 }

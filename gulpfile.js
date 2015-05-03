@@ -27,7 +27,6 @@ gulp.task('css', function() {
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(minifyCSS())
         .pipe(gulp.dest('app/build'))
         .pipe(connect.reload());
 });
@@ -61,6 +60,5 @@ gulp.task('build', function () {
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(minifyCSS())
         .pipe(gulp.dest('app/build'))
 });
